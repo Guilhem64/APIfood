@@ -8,21 +8,56 @@
 }
 
 .App-header {
-  background-color: #222;
+  background-color:yellow;
   height: 150px;
   padding: 20px;
-  color: white;
+  color: yellow;
 }
 
 .App-title {
   font-size: 7em;
   font-family:Tahoma, Geneva, Verdana;
   text-align: center;
+  color:yellow;
+}
+.App-title1 {
+  font-size: 3em;
+  font-family:Tahoma, Geneva, Verdana;
+  text-align: center;
+  color:#0099FF;
 }
 
 .App-intro {
   font-size: large;
 }
+
+.styled {
+  align-items: center;
+  border: 0;
+  line-height: 2.5;
+  padding: 0 20px;
+  font-size: 1rem;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  border-radius: 10px;
+  background-color: rgb(224, 228, 13);
+  background-image: linear-gradient(to top left,
+                                    rgba(0, 0, 0, .2),
+                                    rgba(0, 0, 0, .2) 30%,
+                                    rgba(0, 0, 0, 0));
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+              inset -2px -2px 3px rgba(0, 0, 0, .6);
+}
+
+.styled:hover {
+  background-color: #0099FF;
+}
+
+.styled:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+              inset 2px 2px 3px rgba(0, 0, 0, .6);
+}
+
 
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }

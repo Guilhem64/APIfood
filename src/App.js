@@ -3,7 +3,7 @@ import './App.css';
 import Form from './components/Form';
 import Recipes from './components/Recipes';
 import Particles from 'react-particles-js';
-import { Card, CardImgOverlay, CardImg } from 'reactstrap';
+import { CardImgOverlay } from 'reactstrap';
 
 const APP_ID ="59a70ad4";
 const APP_KEY = "e277ba5dd5d7330c9716948c3fc87001";
@@ -81,7 +81,11 @@ class App extends Component {
       <Particles params={particelOps} style={{
                 width: '100%',height:'100%'}}/>
         <CardImgOverlay>
-        <h1 className="App-title">Hello Toi</h1>
+        <h1 className="App-title">LaBanana.com</h1>
+        <h2 className="App-title1">Marquer un fruit ou un légume et laissez-vous guider par nos recettes</h2>
+          <h3><button className="styled" type="button" style={{alignContent:'center'}}>
+                Retour au l'index
+                </button></h3>
         <main>
         <Form getSearchNameProp={this.getSearchName} />
         <Recipes sendRecipesProp = {this.state.hitsArray}/>
