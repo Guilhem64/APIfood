@@ -83,9 +83,9 @@ class App extends Component {
         <CardImgOverlay>
         <h1 className="App-title">LaBanana.com</h1>
         <h2 className="App-title1">Marquer un fruit ou un légume et laissez-vous guider par nos recettes</h2>
-          <h3><button className="styled" type="button" style={{alignContent:'center'}}>
+        <h3 style={{display:'flex' , justifyContent:'center'}}><button className="styled" type="button" >
                 Retour au l'index
-                </button></h3>
+            </button></h3>
         <main>
         <Form getSearchNameProp={this.getSearchName} />
         <Recipes sendRecipesProp = {this.state.hitsArray}/>
